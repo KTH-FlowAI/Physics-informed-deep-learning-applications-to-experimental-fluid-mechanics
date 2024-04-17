@@ -1,0 +1,37 @@
+Summary of data:
+Data loaded, Nz = 2
+Ny = 64
+Nx = 32
+Nt = 21
+
+Time duration: t = 0.00 to 4.00, nt = 21
+
+Domain size	X = -0.3pi to 0.3pi
+Domain size	Y = 0.0 to 1.0
+Domain size	Z = -0.01125pi to 0.0000pi
+
+Characteristic values from reference
+Half height of channel h:	1
+Central line Reynolds number Re_cl:	5000
+Friction Reynolds number Re_tau:	202
+
+Kolmgorov length scale approximation: 0.001681792830507429 
+
+Kolmgorov time scale approximation: 0.01414213562373095 
+
+Examine the resolution by scale:
+dx = 0.05890486218750002, dymin = -0.024526445804505862, dymax = -0.00030118130379575003, dz = 0.035342916875, dt = 0.2
+
+Scaled:
+dx_s = 35.03eta
+dy_s_min = 0.18eta dy_s_max = 14.58eta
+dz_s = 21.02eta
+dt_s = 14.14teta
+
+As case of s = 8, t = 3
+
+Scaled:
+dx_s = 140.10eta
+dy_s_min = 11.43eta dy_s_max = 111.54eta
+dz_s = 21.02eta
+dt_s = 141.42teta

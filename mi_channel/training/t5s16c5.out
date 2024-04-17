@@ -1,0 +1,57 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 4)]               0         
+                                                                 
+ dense (Dense)               (None, 100)               500       
+                                                                 
+ dense_1 (Dense)             (None, 100)               10100     
+                                                                 
+ dense_2 (Dense)             (None, 100)               10100     
+                                                                 
+ dense_3 (Dense)             (None, 100)               10100     
+                                                                 
+ dense_4 (Dense)             (None, 100)               10100     
+                                                                 
+ dense_5 (Dense)             (None, 100)               10100     
+                                                                 
+ dense_6 (Dense)             (None, 100)               10100     
+                                                                 
+ dense_7 (Dense)             (None, 100)               10100     
+                                                                 
+ dense_8 (Dense)             (None, 100)               10100     
+                                                                 
+ dense_9 (Dense)             (None, 100)               10100     
+                                                                 
+ dense_10 (Dense)            (None, 4)                 404       
+                                                                 
+=================================================================
+Total params: 91,804
+Trainable params: 91,804
+Non-trainable params: 0
+_________________________________________________________________
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =        91804     M =           50
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+91804  46690  50001      1     0     0   2.965D-05   1.187D-04
+
+STOP: TOTAL NO. of f AND g EVALUATIONS EXCEEDS LIMIT        
+None

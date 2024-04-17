@@ -1,0 +1,30 @@
+
+Case t5-s16:
+R_U:	0.9973
+Error: 3.6699172109365463
+Case t3-s8:
+R_U:	0.9988
+
+Case t5-s16:
+R_V:	0.9749
+Error: 24.757224321365356
+Case t3-s8:
+R_V:	0.8655
+
+Case t5-s16:
+R_W:	0.9801
+Error: 22.590219974517822
+Case t3-s8:
+R_W:	0.8563
+
+Case t5-s16:
+Omega:	0.9801
+Examine The noise
+AS noise level = 5.0, R_U = 0.9953
+AS noise level = 5.0, Error = 4.9909
+AS noise level = 5.0, R_V = 0.9985
+AS noise level = 5.0, Error = 4.9703
+AS noise level = 5.0, R_W = 0.9988
+AS noise level = 5.0, Error = 4.9739
+(2, 64, 32, 21) (64, 32, 21)
+AS noise level = 5.0, R_Omega = 0.8076
