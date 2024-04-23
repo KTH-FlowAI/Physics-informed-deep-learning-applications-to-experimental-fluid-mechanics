@@ -18,7 +18,7 @@ The PINNs training and prediction can be performed after cloning the repository.
 
 Take *cylinder_wake* as example:
     
-    git clone  https://github.com/Fantasy98/Physics-informed-neural-networks-for-solving-Reynolds-averaged-Navier-Stokes-equations.git
+    git clone  https://github.com/KTH-FlowAI/Physics-informed-deep-learning-applications-to-experimental-fluid-mechanics.git
     cd cylinder_wake/training
     python training.py
 
