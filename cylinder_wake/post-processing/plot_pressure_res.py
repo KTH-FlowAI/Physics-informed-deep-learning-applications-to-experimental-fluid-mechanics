@@ -58,6 +58,8 @@ import numpy.linalg as LA
 
 fig, ax = plt.subplots(2, 2, figsize=(6, 4.5),sharex=True,sharey=True)
 # plt.set_cmap('cmo.tarn_r')
+
+ax[1,1].axis('off')
 cmap = 'cmo.tarn_r'
 
 ax[0,0].contourf(x, y, u_pinn[2, :, :, n], cmap = cmap, levels = l, vmin = -0.5, vmax = 0.05)
@@ -86,7 +88,7 @@ cb2.ax.locator_params(nbins=3)
 for axx in ax[1,:].flatten():
     axx.set_xlabel('$x$')
     
-for axx in ax.flatten()[1:3]:
+for axx in ax.flatten()[1:2]:
     axx.set_yticklabels([])
 
 ax[0,0].set_ylabel('$y$')
