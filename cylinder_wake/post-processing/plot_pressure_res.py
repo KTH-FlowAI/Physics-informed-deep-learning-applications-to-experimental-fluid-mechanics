@@ -56,13 +56,6 @@ e_pinn = np.abs(u_pinn[2, :, :, n] - p[:, :, n])
 import numpy.linalg as LA
 
 
-e_r_pinn = np.abs((p[:, :, n] - u_pinn[2, :, :, n]))/LA.norm(p[:, :, n,None],ord=1,axis=-1)
-e_r_pinn *= 100
-loc = np.where(e_r_pinn >= 100)
-e_r_pinn[loc] = 100
-
-
-
 fig, ax = plt.subplots(2, 2, figsize=(6, 4.5),sharex=True,sharey=True)
 # plt.set_cmap('cmo.tarn_r')
 cmap = 'cmo.tarn_r'
@@ -72,7 +65,6 @@ c0 = ax[0,1].contourf(x, y, p[:, :, n],    cmap = cmap, levels = l, vmin = -0.5,
 
 l = 12
 c1 = ax[1,0].contourf(x, y, e_pinn,   cmap = cmap, levels = l)
-c2 = ax[1,1].contourf(x, y, e_r_pinn, cmap = cmap, levels = l)
 
 for axx in ax.flatten():
     axx.set_aspect('equal')
@@ -91,17 +83,6 @@ cb2.set_ticks([0.2*e_pinn.max(), 0.5*e_pinn.max(), 0.8*e_pinn.max()])
 
 cb2.ax.locator_params(nbins=3)
 
-
-cax3 = fig.add_axes([0.58,-0.02,0.3,0.01])
-cb3 = plt.colorbar(c2,cax=cax3,format = "%.1d", 
-                        orientation='horizontal',
-                        shrink = 0.9, 
-                        pad = 0.25, aspect = 20)
-
-cb3.set_ticks([0.2*e_r_pinn.max(), 0.5*e_r_pinn.max(), 0.8*e_r_pinn.max()])
-# cb3.set_ticks([0.2*e_r_pinn.min(), 0.5*e_r_pinn.max(), 0.8*e_r_pinn.max()])
-cb3.ax.locator_params(nbins=3)
-    
 for axx in ax[1,:].flatten():
     axx.set_xlabel('$x$')
     
@@ -113,7 +94,6 @@ ax[1,0].set_ylabel('$y$')
 ax[0,1].set_title('Reference')
 ax[0,0].set_title('PINNs')
 ax[1,0].set_title('$\\varepsilon = | p - \\tilde{p} |$', fontsize = 16)
-ax[1,1].set_title('$\\hat{\\varepsilon} = | (p - \\tilde{p})$' + "/" + "$ p |$" + " " + r"$(\%)$", fontsize = 16)
 
 
 plt.savefig('clean_pressure.pdf', bbox_inches = 'tight', dpi = 500)

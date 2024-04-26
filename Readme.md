@@ -1,9 +1,9 @@
 # Physics-informed deep-learning applications to experimental fluid mechanics
 
 ## Introduction
-The code in this repository features a Python implemention of Physics-informed neural networks (PINNs) for applications to experimental fluid mechanics. The input data are spatial coordinates (*x*, *y*) only taken at the domain boundaries. 
+The code in this repository features a Python implemention of Physics-informed neural networks (PINNs) for applications to experimental fluid mechanics.
 
-More details about the implementation and results from the training are available in ["Physics-informed deep-learning applications to experimental fluid mechanics", Hamidreza Eivazi, Yuning Wang, Ricardo Vinuesa](https://arxiv.org/abs/2203.15402)(2022,*Physics of Fluids*)
+More details about the implementation and results from the training are available in ["Physics-informed deep-learning applications to experimental fluid mechanics", Hamidreza Eivazi, Yuning Wang, Ricardo Vinuesa](https://doi.org/10.1088/1361-6501/ad3fd3)(2024,*Measurement Science and Technology*)
 
 ## Pre-requisites
 The code was run successfully using Tensorflow>=2.6.0, using 1 GPU for training. In addition, scipy is necessary for implementing optimization algorithm
